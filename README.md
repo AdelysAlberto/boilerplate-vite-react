@@ -16,20 +16,20 @@ These are several useful commands to run the project.
 
 - Install Dependencies:
 ```console
-adelysbelen@challenge:~$ yarn install
+adelysbelen@terminal:~$ yarn install
 ```
 
 - Run unit test:
 ```console
-adelysbelen@challenge:~$ yarn test
+adelysbelen@terminal:~$ yarn test
 ```
 
 - Run app local - mode development:
 ```console
-adelysbelen@challenge:~$ yarn dev
+adelysbelen@terminal:~$ yarn dev
 ```
 
 - Build app:
 ```console
-adelysbelen@challenge:~$ yarn build
+adelysbelen@terminal:~$ yarn build
 ```
