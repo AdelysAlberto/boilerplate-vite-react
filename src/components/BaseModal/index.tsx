@@ -19,8 +19,8 @@ const BaseModal = ({ isVisible = false, showCloseButton = false, showModal, titl
     <>
       <div className={`${isVisible ? styles.visible : styles.noVisible} ${styles.modal}`}>
         <div className={styles.modal__content}>
-          <div className={styles.modal__header}>  
-            <BaseIcon icon='icon-close' width={30} height={30} style={styles.icon__close} onClick={() => showModal(false)}/>
+          <div className={styles.modal__header}>
+            <BaseIcon icon='icon-close' width={30} height={30} style={styles.icon__close} onClick={() => showModal(false)} />
             <div className='font-big m-2'>
               {title}
             </div>
@@ -34,8 +34,8 @@ const BaseModal = ({ isVisible = false, showCloseButton = false, showModal, titl
 
           {showCloseButton ? (
             <div className={styles.modal__footer}>
-              <BaseButton margings="" title="Cerrar" onClick={() => showModal(false)} />
-            </div>) 
+              <BaseButton title="Cerrar" onClick={() => showModal(false)} />
+            </div>)
             : (<></>)
           }
         </div>

@@ -1,11 +1,11 @@
 import request from "../infra/request"
 import configEnv from '../utilities/config.utility';
-import { setStorage } from "../storage/localStorage";
+import { setStorage } from "../infra/store/localStorage";
 
-const postLoginUserService = async (payload: any) => {
+const loginUser = async (payload: any) => {
   try {
 
-    const { data, statusText } = await request.post(configEnv.URL_loginUser, payload);
+    const { data, statusText } = await request.post(configEnv.urlLogin, payload);
     if (statusText) return { statusText };
     setStorage('userStorage', data);
     return data;
@@ -15,35 +15,6 @@ const postLoginUserService = async (payload: any) => {
   }
 }
 
-const postRegisterUserService = async (payload: any) => {
-  try {
-
-    const { data, statusText } = await request.post(configEnv.URL_registerUser, payload);
-
-    if (statusText) return { statusText }
-    setStorage('userStorage', data);
-    return data;
-
-  } catch (e) {
-    return { statusText: e }
-  }
-}
-
-const postInviteService = async (payload: any) => {
-  try {
-
-    const { data, statusText } = await request.post(configEnv.URL_registerInvite, payload);
-
-    if (statusText) return { statusText }
-    return data;
-
-  } catch (e) {
-    return { statusText: e }
-  }
-}
-
 export {
-  postLoginUserService,
-  postRegisterUserService,
-  postInviteService
+  loginUser
 }

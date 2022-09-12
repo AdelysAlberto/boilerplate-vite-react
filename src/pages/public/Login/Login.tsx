@@ -1,5 +1,5 @@
 import React from 'react';
-import LayoutDefault from '../../../adapters/layouts/default';
+import LayoutDefault from '../../../layouts/default';
 import styles from './styles/Login.module.scss';
 
 export interface LoginInterface { }

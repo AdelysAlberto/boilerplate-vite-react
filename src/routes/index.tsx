@@ -8,7 +8,7 @@ import {
 
 import { TFCLazy } from "../interfaces/common";
 import AuthGuard from "./guards/AuthGuard";
-import BaseLoading from "../baseComponents/BaseLoading";
+import BaseLoading from "../components/BaseLoading";
 
 import { PrivateRoutes, PublicRoutes } from "./routes.path";
 

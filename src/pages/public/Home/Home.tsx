@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LayoutDefault from '../../../adapters/layouts/default';
+import LayoutDefault from '../../../layouts/default';
 import styles from './styles/Home.module.scss';
 
 export interface HomeInterface { }
